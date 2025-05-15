@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paul Benalcazar, Ph.D. | Forest Science, Lakehead University</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles can go here if needed, but Tailwind handles most */
+        body {
+            /* Using CSS for background image */
+            background-image: url('background_index.jpg');
+            background-size: cover; /* Cover the entire background */
+            background-position: center; /* Center the background image */
+            background-attachment: fixed; /* Keep background fixed when scrolling */
+            /* Fallback background color if image doesn't load */
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif; /* Set a default font */
+        }
+
+        /* Style for the hr elements */
+        hr {
+            border-color: #e16f10; /* Match the original color */
+            border-width: 2px;
+            margin: 1rem 0; /* Add some vertical spacing */
+        }
+
+        /* Ensure iframe is responsive */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000; /* Background for letterboxing */
+            border-radius: 0.5rem; /* Rounded corners */
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <header class="bg-white shadow-md py-2">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+            <nav aria-label="Utility Navigation">
+                <ul class="flex flex-wrap justify-center md:justify-start space-x-4 text-sm font-bold text-[#02151f]">
+                    <li><a href="http://gmail.com/" class="hover:text-[#33cccc] transition duration-300 rounded px-2 py-1">Gmail</a></li>
+                    <li><a href="https://calendar.google.com/calendar/r" class="hover:text-[#33cccc] transition duration-300 rounded px-2 py-1">Google Calendar</a></li>
+                    <li><a href="https://docs.google.com/" class="hover:text-[#33cccc] transition duration-300 rounded px-2 py-1">Google Docs</a></li>
+                    <li><a href="https://www.youtube.com/" class="hover:text-[#33cccc] transition duration-300 rounded px-2 py-1">YouTube</a></li>
+                    <li><a href="donate.html" class="hover:text-[#33cccc] transition duration-300 rounded px-2 py-1">Donate</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto mt-8 p-4 bg-[#070d66] text-white rounded-lg shadow-lg">
+        <div class="flex flex-col md:flex-row items-center md:items-start">
+            <aside class="md:w-1/4 flex justify-center md:justify-start mb-6 md:mb-0">
+                <div class="bg-[#070d66] p-1 rounded-full border-4 border-[#e16f10]">
+                    <a href="index.html"><img src="paul_index2.jpg" alt="Paul Benalcazar profile image" class="rounded-full w-40 h-40 object-cover"></a>
+                </div>
+            </aside>
+
+            <section class="md:w-3/4 text-center md:text-left md:pl-8">
+                <h1 class="text-4xl md:text-5xl font-fantasy font-bold mb-2">Agr. Paúl Benalcázar Ph.D.</h1>
+                <h2 class="text-2xl md:text-3xl font-fantasy mb-2">Soil Health and Water Management</h2>
+                <h3 class="text-xl md:text-2xl font-fantasy">Agro-Ecosystems</h3>
+            </section>
+        </div>
+
+        <hr class="my-8"> <div class="flex flex-col md:flex-row">
+            <nav aria-label="Main Navigation" class="md:w-1/4 mb-6 md:mb-0 md:pr-8">
+                <ul class="space-y-4 text-lg font-bold text-white">
+                    <li><a href="index.html" class="hover:text-[#33cccc] transition duration-300 rounded px-2 py-1 block">HOME</a></li>
+                    <hr>
+                    <li><a href="about.html" class="hover:text-[#33cccc] transition duration-300 rounded px-2 py-1 block">About</a></li>
+                    <hr>
+                    <li><a href="research_interest.html" class="hover:text-[#33cccc] transition duration-300 rounded px-2 py-1 block">Research Interest</a></li>
+                    <hr>
+                    <li><a href="project.html" class="hover:text-[#33cccc] transition duration-300 rounded px-2 py-1 block">Projects</a></li>
+                    <hr>
+                    <li><a href="publications.html" class="hover:text-[#33cccc] transition duration-300 rounded px-2 py-1 block">Publications</a></li>
+                    <hr>
+                    <li><a href="photo_gallery.html" class="hover:text-[#33cccc] transition duration-300 rounded px-2 py-1 block">Photo Gallery</a></li>
+                    <hr>
+                    <li><a href="videos.html" class="hover:text-[#33cccc] transition duration-300 rounded px-2 py-1 block">Videos</a></li>
+                    <hr>
+                    <li><a href="http://ponce.sdsu.edu/" class="hover:text-[#33cccc] transition duration-300 rounded px-2 py-1 block">Dr. Victor Ponce's website</a></li>
+                    <hr>
+                </ul>
+            </nav>
+
+            <section class="md:w-3/4 bg-[#7bb4d0] p-4 rounded-lg shadow-inner flex justify-center items-center">
+                <div class="video-container w-full max-w-2xl">
+                    <iframe src="https://www.youtube.com/embed/bst-u6mYB8Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Embedded video placeholder"></iframe>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="container mx-auto mt-8 p-4 bg-white text-gray-800 rounded-lg shadow-md flex flex-col md:flex-row justify-between items-center text-sm">
+        <nav aria-label="Footer Navigation" class="mb-4 md:mb-0">
+            <ul class="flex flex-wrap justify-center md:justify-start space-x-4 font-bold">
+                <li><a href="http://onlinecalc.sdsu.edu/" class="hover:text-[#33cccc] transition duration-300 rounded px-2 py-1">OnlineCalc</a></li>
+                <li><a href="http://visualab.sdsu.edu/" class="hover:text-[#33cccc] transition duration-300 rounded px-2 py-1">Visualab</a></li>
+                <li><a href="http://color.sdsu.edu/" class="hover:text-[#33cccc] transition duration-300 rounded px-2 py-1">Color</a></li>
+            </ul>
+        </nav>
+        <div class="text-center md:text-right">
+            <p>Copyright © 2018 Paul Benalcazar, All rights reserved</p>
+        </div>
+    </footer>
+
+</body>
+</html>
